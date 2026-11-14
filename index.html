@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#241914">
+<title>برای آنیتا — با تمام احترام</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--night:#211712;--espresso:#39271f;--cream:#f4ead9;--paper:#fbf5e9;--gold:#b4935b;--palegold:#ddc89d;--muted:#92795e;--ink:#463329}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;padding:clamp(14px,3vw,34px);display:grid;place-items:center;background:radial-gradient(ellipse at 50% 12%,#634735 0,#34241c 43%,#1d1511 100%);font-family:Vazirmatn,Tahoma,sans-serif;color:var(--ink);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:12px;border:1px solid rgba(221,200,157,.5);pointer-events:none}
+body:after{content:"";position:fixed;inset:19px;border:1px solid rgba(221,200,157,.17);pointer-events:none}
+.ambient{position:fixed;width:460px;height:460px;border-radius:50%;background:#d5b77b;filter:blur(150px);opacity:.09;top:-240px;left:calc(50% - 230px);pointer-events:none}
+.card{width:min(790px,100%);position:relative;background:linear-gradient(145deg,#fffaf0 0%,#f4ead9 55%,#eee0ca 100%);padding:clamp(30px,6vw,66px) clamp(22px,7vw,78px) 42px;box-shadow:0 35px 100px #10090599;border:1px solid #c6a66e;text-align:center;isolation:isolate}
+.card:before{content:"";position:absolute;inset:10px;border:1px solid rgba(180,147,91,.72);pointer-events:none}
+.card:after{content:"";position:absolute;inset:16px;border:1px solid rgba(180,147,91,.22);pointer-events:none}
+.corner{position:absolute;width:34px;height:34px;border-color:#a9874e;z-index:2}
+.tl{top:7px;left:7px;border-top:1px solid;border-left:1px solid}.tr{top:7px;right:7px;border-top:1px solid;border-right:1px solid}.bl{bottom:7px;left:7px;border-bottom:1px solid;border-left:1px solid}.br{bottom:7px;right:7px;border-bottom:1px solid;border-right:1px solid}
+.eyebrow{font-size:11px;letter-spacing:4px;color:#9a7947;font-weight:600;position:relative;z-index:1}
+.ornament{display:flex;align-items:center;justify-content:center;gap:12px;margin:15px auto 18px;color:var(--gold)}
+.ornament:before,.ornament:after{content:"";width:54px;height:1px;background:linear-gradient(90deg,transparent,#b4935b)}
+.ornament:after{transform:scaleX(-1)}
+.ornament span{font-size:17px}
+h1{font-size:clamp(38px,7vw,67px);font-weight:700;line-height:1.35;color:#493226;margin:0;position:relative;z-index:1}
+.subtitle{font-size:14px;letter-spacing:.2px;color:#907557;margin:7px 0 0;font-weight:300}
+.bouquet-wrap{width:min(350px,90%);margin:16px auto 8px;position:relative;z-index:1}
+.bouquet-wrap:before{content:"";position:absolute;width:210px;height:210px;left:50%;top:18px;transform:translateX(-50%);border-radius:50%;background:#d6bd8b;filter:blur(55px);opacity:.23}
+.bouquet{width:100%;height:auto;position:relative;filter:drop-shadow(0 16px 14px #60452b24)}
+.divider{height:1px;width:min(280px,70%);margin:13px auto 25px;background:linear-gradient(90deg,transparent,#b4935b,transparent)}
+.copy{max-width:580px;margin:auto;position:relative;z-index:1;font-size:15px;line-height:2.45;font-weight:300;color:#655044}
+.copy .em{color:#795b36;font-weight:600}
+.quote{max-width:570px;margin:25px auto 0;padding:19px 24px 20px;border:1px solid #d5c19c;background:linear-gradient(135deg,#f6eddf,#eee1cb);position:relative;z-index:1;font-size:14px;line-height:2.25;color:#6b5543}
+.quote:before{content:"“";position:absolute;top:-22px;right:18px;font-family:Georgia,serif;font-size:48px;color:#b4935b;background:#f6eddf;padding:0 7px;line-height:1}
+.quote strong{font-weight:600;color:#755631}
+.signoff{margin-top:30px;position:relative;z-index:1;color:#967a58;font-size:13px}
+.signoff .signature{display:block;font-size:25px;color:#76552f;margin-top:5px;font-weight:500}
+.action{position:relative;z-index:1;margin-top:23px}
+button{border:1px solid #a9874e;background:#493226;color:#f9f0df;padding:12px 29px;font:500 13px Vazirmatn,sans-serif;letter-spacing:.2px;cursor:pointer;transition:all .25s;box-shadow:0 5px 14px #4a34221a}
+button:hover{background:#76583a;transform:translateY(-2px);box-shadow:0 9px 20px #4a342233}
+#closing{max-width:500px;margin:18px auto 0;padding:14px 18px;color:#76552f;font-size:14px;line-height:2;border-top:1px solid #d7c39e;border-bottom:1px solid #d7c39e;animation:reveal .5s ease both}
+[hidden]{display:none!important}
+.footer{margin-top:30px;position:relative;z-index:1;color:#aa9678;font-size:10px;letter-spacing:1px}
+@keyframes reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:520px){body{padding:18px 12px}.card{padding:36px 23px 31px}.copy{font-size:13.5px}.quote{font-size:13px;padding:17px}.eyebrow{letter-spacing:2.5px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto;animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="ambient"></div>
+<main class="card">
+  <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+  <div class="eyebrow">A NOTE FROM THE HEART</div>
+  <div class="ornament"><span>✦</span></div>
+  <h1>آنیتا جان</h1>
+  <p class="subtitle">برای تو، با صداقتی که از دل می‌آید</p>
+
+  <div class="bouquet-wrap">
+  <svg class="bouquet" viewBox="0 0 360 330" role="img" aria-label="دسته‌گل رزهای کرم و صورتی با برگ‌های سبز و روبان طلایی">
+    <defs>
+      <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8d6b4"/><stop offset=".55" stop-color="#c9ad7b"/><stop offset="1" stop-color="#a98756"/></linearGradient>
+      <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf5"/><stop offset=".55" stop-color="#f0d9c9"/><stop offset="1" stop-color="#d9b8a4"/></linearGradient>
+      <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9e7df"/><stop offset="1" stop-color="#d9a99c"/></linearGradient>
+      <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9aa184"/><stop offset="1" stop-color="#59664f"/></linearGradient>
+      <g id="rosebud">
+        <path d="M0 18 C-31 15 -29 -17 -8 -26 C-5 -39 17 -38 20 -22 C39 -11 27 17 0 18Z" fill="url(#rose)"/>
+        <path d="M0 15 C-19 9 -18 -12 -3 -17 C7 -28 22 -13 15 0 C12 9 5 14 0 15Z" fill="#f8eee0"/>
+        <path d="M-5 9 C-12 -2 -5 -15 5 -13 C16 -7 11 6 2 11" fill="none" stroke="#d6b59c" stroke-width="2"/>
+        <path d="M-20 -1 Q-8 -10 -5 -23 M19 -3 Q9 -13 8 -26" fill="none" stroke="#e6cdbb" stroke-width="2"/>
+        <path d="M-20 8 Q-30 2 -27 -8 Q-15 -8 -10 0 M18 8 Q29 3 26 -8 Q15 -7 10 1" fill="#788269"/>
+      </g>
+      <g id="leaflet"><path d="M0 0 C-26 -30 -51 -16 -42 4 C-29 21 -10 14 0 0Z" fill="url(#leaf)"/><path d="M-3 2L-37 5" stroke="#c3c3a3" stroke-width="1.5" fill="none"/></g>
+    </defs>
+    <!-- stems -->
+    <g fill="none" stroke="#657456" stroke-width="3.2" stroke-linecap="round">
+      <path d="M174 198 Q125 112 83 56"/><path d="M181 198 Q176 100 177 36"/><path d="M188 198 Q233 107 276 63"/>
+      <path d="M169 200 Q106 153 52 116"/><path d="M193 199 Q257 151 309 113"/><path d="M180 202 Q146 127 132 83"/>
+    </g>
+    <use href="#leaflet" transform="translate(112 133) rotate(25) scale(.86)"/>
+    <use href="#leaflet" transform="translate(236 132) rotate(150) scale(.9)"/>
+    <use href="#leaflet" transform="translate(87 157) rotate(18) scale(.75)"/>
+    <use href="#leaflet" transform="translate(267 158) rotate(165) scale(.78)"/>
+    <use href="#leaflet" transform="translate(145 103) rotate(40) scale(.65)"/>
+    <use href="#leaflet" transform="translate(216 102) rotate(145) scale(.68)"/>
+    <use href="#leaflet" transform="translate(72 94) rotate(5) scale(.58)"/>
+    <use href="#leaflet" transform="translate(290 91) rotate(175) scale(.6)"/>
+    <!-- wrapping -->
+    <path d="M64 133 Q178 190 296 132 L245 303 Q180 330 115 303Z" fill="url(#paper)" stroke="#aa8a59" stroke-width="1.5"/>
+    <path d="M64 133 Q178 196 296 132 L282 163 Q180 219 78 162Z" fill="#f4e7ce" stroke="#c5a66e" stroke-width="2"/>
+    <path d="M115 303 Q180 268 245 303 L180 326Z" fill="#a98958" opacity=".9"/>
+    <path d="M180 278 C150 250 136 277 161 292 L180 304 L199 292 C224 277 210 250 180 278Z" fill="#f0dfbd" stroke="#a9874e" stroke-width="2"/>
+    <path d="M180 282 L180 307" stroke="#b4935b" stroke-width="2"/>
+    <!-- flowers -->
+    <use href="#rosebud" transform="translate(83 57) scale(.88)"/>
+    <use href="#rosebud" transform="translate(177 37) scale(1.08)"/>
+    <use href="#rosebud" transform="translate(276 64) scale(.94)"/>
+    <use href="#rosebud" transform="translate(52 116) scale(.76)"/>
+    <use href="#rosebud" transform="translate(309 113) scale(.76)"/>
+    <use href="#rosebud" transform="translate(132 84) scale(.78)"/>
+    <use href="#rosebud" transform="translate(226 91) scale(.8)"/>
+    <g fill="#d3b276"><circle cx="109" cy="43" r="3.5"/><circle cx="247" cy="39" r="3"/><circle cx="31" cy="76" r="3"/><circle cx="329" cy="80" r="3"/><circle cx="145" cy="20" r="2.5"/><circle cx="207" cy="17" r="2.5"/></g>
+    <path d="M180 17v-9 M175 12h10" stroke="#b4935b" stroke-width="1.2"/>
+  </svg>
+  </div>
+
+  <div class="divider"></div>
+  <section class="copy">
+    می‌دانم که از من دلخوری و حق داری احساست را جدی بگیری. نمی‌خواهم با چند جمله، ناراحتی‌ات را کوچک جلوه بدهم یا از تو بخواهم زودتر از چیزی که آماده‌ای، همه‌چیز را فراموش کنی.
+    <br><br>
+    فقط می‌خواهم بدانی که <span class="em">از ته دل بابت چیزی که باعث رنجشت شد عذر می‌خواهم.</span> اگر جایی کوتاهی کردم، اگر حرف یا رفتارم دلت را شکست، مسئولیتش را می‌پذیرم؛ نه برای اینکه بحث تمام شود، بلکه چون احساس تو برایم مهم است.
+  </section>
+
+  <div class="quote">
+    نمی‌توانم قول بدهم هیچ‌وقت اشتباه نکنم؛ اما می‌توانم قول بدهم که حرف‌هایت را بشنوم، از اشتباهم درس بگیرم و برای جبرانش فقط به حرف اکتفا نکنم.
+    <br><strong>اگر دلت خواست، دوست دارم فرصتی بدهی تا آرام و بی‌حاشیه با هم حرف بزنیم.</strong>
+  </div>
+
+  <div class="signoff">با احترام به دل و احساست،<span class="signature">ببخش منو، آنیتا 🌷</span></div>
+  <div class="action"><button id="reveal" type="button" onclick="document.getElementById('closing').hidden=false;this.hidden=true">یک حرف دیگر، فقط برای تو</button></div>
+  <p id="closing" hidden>بودنت برایم ارزشمند است؛ امیدوارم بتوانم این ارزش را نه فقط با کلمات، که با رفتارم هم نشان بدهم.</p>
+  <div class="footer">✦ &nbsp; از دل، برای دل &nbsp; ✦</div>
+</main>
+</body>
+</html>
